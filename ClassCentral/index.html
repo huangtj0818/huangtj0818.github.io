@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>爱学习的搜索平台 | 下岗吧 一切！</title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://huangtj0818.github.io/favicon.ico?v=1694957864069">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://huangtj0818.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://huangtj0818.github.io">
+        <img class="avatar" src="https://huangtj0818.github.io/images/avatar.png?v=1694957864069" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://huangtj0818.github.io">
+        <h1 class="site-title">下岗吧 一切！</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://pbs.twimg.com/media/F2CKXpfaQAAjc7I?format=jpg&amp;name=small')">
+            </div>
+          
+          <h2 class="post-title">爱学习的搜索平台</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2023-09-17</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://huangtj0818.github.io/qy-a3YvxH/">
+                    study
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <p>🌎 全球在线课程搜索引擎和学习平台</p>
+<p>💻 汇集了来自斯坦佛大学、麻省理工学院、</p>
+<p>🌉 英国公开大学等慕课平台的150000门课程</p>
+<p>📝 可以根据大学、提供商和机构等进行搜索查找</p>
+<figure data-type="image" tabindex="1"><img src="https://huangtj0818.github.io/post-images/1694948682133.jpg" alt="" loading="lazy"></figure>
+<p>💬  Class Central（课程中央网站）是一个全球在线课程搜索引擎和学习平台，全球知名的慕课资源导航社区，汇集了来自Coursera（斯坦佛大学）、edX（麻省理工学院）、Futurelearn（英国公开大学）等慕课平台的150000门课程，可以根据大学、提供商和机构等等进行在线搜索查找课程，包括课程评论和评分、课程推荐、学习计划和社区互动等信息，非常全面，用户还可以获得证书，而且还定期发布MOOC报告，为在线学习者和教育从业者提供参考资料等等。</p>
+<p>👓 地址：https://www.classcentral.com/</p>
+<p>😘 Enjoy~</p>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by Gridea | <a class="rss" href="https://huangtj0818.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '564b0c4c6f8c744383cd',
+        clientSecret: '5992c4d62000c741a598a7fab5609761caa23bcd',
+        repo: 'huangtj0818.github.io',
+        owner: 'huangtj0818',
+        admin: ['huangtj0818'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
